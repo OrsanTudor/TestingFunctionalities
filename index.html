@@ -3,24 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My GitHub Pages Site</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <title>Interactive Page</title>
+
+    <link rel="stylesheet" href="page.css" />
   </head>
+
   <body>
     <header>
-      <h1>Hello, World!</h1>
-      <p>This is a simple website hosted with GitHub Pages.</p>
+      <div class="container">
+        <h1>Welcome to My Interactive Page</h1>
+        <p>Click the button below to interact with the page.</p>
+      </div>
     </header>
 
     <main>
-      <button id="clickMeBtn">Click Me</button>
-      <p id="message"></p>
+      <div class="content">
+        <button id="clickMeBtn">Click Me!</button>
+        <p id="message"></p>
+        <button id="modalBtn">Show Modal</button>
+      </div>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>This is a Modal</h2>
+          <p>
+            Here’s some additional information you can display inside a modal
+            window.
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer>
-      <p>&copy; 2025 My GitHub Page</p>
+      <p>&copy; 2025 My Interactive Web Page</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="page.js"></script>
   </body>
 </html>
